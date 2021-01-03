@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./TinyTemplate.js"></script>
+    <script>
+        var str = TinyTemplate.render(`
+            <%= users | first %>`, {
+            users: [
+                'jy',
+                'hi'
+            ]
+        });
+        console.log(str)
+    </script>
+</body>
+</html>
